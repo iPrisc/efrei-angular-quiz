@@ -1,4 +1,22 @@
 {
+  "categories": [
+    {
+      "id": 1,
+      "category": "Angular"
+    },
+    {
+      "id": 2,
+      "category": "JavaScript"
+    },
+    {
+      "id": 3,
+      "category": "HTML"
+    },
+    {
+      "id": 4,
+      "category": "CSS"
+    }
+  ],
   "questions": [
     {
       "id": 1,
