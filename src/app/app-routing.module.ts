@@ -29,6 +29,10 @@ const routes: Routes = [
     component: RegisterComponent
   },
   {
+    path: 'categories',
+    component: CategorieComponent
+  },
+  {
     path: 'categorie/:id',
     component: CategorieComponent
   }
