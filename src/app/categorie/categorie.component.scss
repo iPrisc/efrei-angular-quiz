@@ -23,3 +23,13 @@
     @apply my-8
   }
 }
+
+.question {
+  &_container {
+    @apply flex flex-col items-center my-2 p-8 bg-violet-100 rounded-lg;
+  }
+
+  &_label {
+    @apply text-lg mb-6;
+  }
+}
