@@ -2,15 +2,17 @@
   <h2 class="home_title">Catégories</h2>
   <p class="home_presentation">Choisissez une catégorie pour voir le quizz</p>
   <form action="" class="home_form">
-    <input type="text" id="name" name="name" placeholder="Recherche une catégorie">
-    <button class="btn--icon">
+    <input type="text" id="name" name="name" placeholder="Recherche une catégorie" #filter>
+    
+    <button class="btn--icon" type="button" (click)="filterResults(filter.value)">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
         <path d="M3.478 2.405a.75.75 0 00-.926.94l2.432 7.905H13.5a.75.75 0 010 1.5H4.984l-2.432 7.905a.75.75 0 00.926.94 60.519 60.519 0 0018.445-8.986.75.75 0 000-1.218A60.517 60.517 0 003.478 2.405z" />
       </svg>
     </button>
+    
   </form>
-  <section class="question_container" *ngFor="let content of categories; let i = index">
-    <button class="question_label" > {{ content?.category }}</button>
+  <section class="question_container" *ngFor="let content of filteredCategories; let i = index">
+    <button class="question_label"> {{ content?.category }}</button>
   </section>
 </section>
 
